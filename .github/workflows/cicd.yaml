@@ -57,4 +57,7 @@ jobs:
           host: ${{ secrets.SERVER_ADDRESS }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PRIVATE_KEY }}
-          script: whoami
+          script: |
+            cd home/ubuntu/test_cicd
+            docker-compose pull
+            docker-compose up -d
