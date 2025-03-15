@@ -55,5 +55,4 @@ jobs:
           host: ${{ secrets.SERVER_ADDRESS }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PRIVATE_KEY }}
-          port: ${{ secrets.PORT }}
           script: whoami
