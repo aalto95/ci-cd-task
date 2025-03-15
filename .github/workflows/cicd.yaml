@@ -46,7 +46,7 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
-  refresh:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: executing remote ssh commands using ssh key
